@@ -23,13 +23,13 @@ public class LaberintoRecursivo {
                     {'#','#', ' ','#','#',' ','#',' ','#',' ','#','#'},
                     {'#','#', ' ','#','#',' ',' ',' ','#',' ','#','#'},
                     {'#','#', ' ',' ',' ',' ','#','#','#',' ','#','#'},
-                    {'#','#', '#','#','#','#','#','#','#',' ',' ','F'},
+                    {'#','#', '#','#','#','#','#','#','#',' ',' ','#'},
                     {'#','#','#','#','#','#','#','#','#','#','#','#'}};
 
     public static void main(String[] args) {
         
          Laberinto laberinto = new Laberinto(laberintoPrincipal);
-        if(laberinto.resolucionLaberinto(1,1)){
+        if(laberinto.ResolucionLaberinto(1,1) == true){
             System.out.println(" ");
             System.out.println("FELICIDADES, LABERINTO RESUELTO.");
         }else{

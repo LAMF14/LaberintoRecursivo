@@ -28,14 +28,14 @@ public class Laberinto {
         L = l;
     }
 
-    public boolean resolucionLaberinto(int x, int y){
+    public boolean ResolucionLaberinto(int x, int y){
         if(L[x][y]=='F')
             return true;
         if(L[x][y]=='#'|| L[x][y]=='.')
             return false;
         L[x][y]='.';
         imprimirLaberinto();
-        if(resolucionLaberinto(x, y+1)||resolucionLaberinto(x-1, y)||resolucionLaberinto(x, y-1)||resolucionLaberinto(x+1, y)){ // (Arriba o Izquierda o Abajo o Derecha )
+        if(ResolucionLaberinto(x, y+1)||ResolucionLaberinto(x-1, y)||ResolucionLaberinto(x, y-1)||ResolucionLaberinto(x+1, y)){ // (Arriba o Izquierda o Abajo o Derecha )
             return true;
         }
         imprimirLaberinto();
